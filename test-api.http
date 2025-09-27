@@ -15,10 +15,10 @@ Content-Type: application/json
 ### Get All Products
 GET http://localhost:3000/api/v1/products
 
-### Get Product by ID (replace with actual ID)
+### Get Product by ID 
 GET http://localhost:3000/api/v1/products/45f46de0-e165-4a39-83b0-0d7528ff164c
 
-### Update Product (replace with actual ID)
+### Update Product 
 PUT http://localhost:3000/api/v1/products/45f46de0-e165-4a39-83b0-0d7528ff164c
 Content-Type: application/json
 
@@ -27,7 +27,7 @@ Content-Type: application/json
   "stock_quantity": 150
 }
 
-### Increase Stock (replace with actual ID)
+### Increase Stock
 POST http://localhost:3000/api/v1/products/45f46de0-e165-4a39-83b0-0d7528ff164c/increase-stock
 Content-Type: application/json
 
@@ -35,7 +35,7 @@ Content-Type: application/json
   "quantity": 50
 }
 
-### Decrease Stock (replace with actual ID)
+### Decrease Stock
 POST http://localhost:3000/api/v1/products/45f46de0-e165-4a39-83b0-0d7528ff164c/decrease-stock
 Content-Type: application/json
 
@@ -46,5 +46,5 @@ Content-Type: application/json
 ### Get Low Stock Products
 GET http://localhost:3000/api/v1/products/low-stock/list
 
-### Delete Product (replace with actual ID)
+### Delete Product 
 DELETE http://localhost:3000/api/v1/products/d955cf46-a3c1-4131-9cb9-3593ad795bb7
