@@ -37,13 +37,30 @@ Core Functionality
 
 Advanced Features
 
-🚀 Low Stock Alerts - Automatically identifies products running low
-🚀 Comprehensive Testing - 95%+ code coverage ensures reliability
-🚀 Error Handling - Proper responses for all scenarios
-🚀 Production Ready - Security middleware and logging included
+- Low Stock Alerts - Automatically identifies products running low
+- Comprehensive Testing - 95%+ code coverage ensures reliability
+- Error Handling - Proper responses for all scenarios
+- Production Ready - Security middleware and logging included
 
 📊 API Endpoints
-ActionEndpointWhat It DoesCreate ProductPOST /api/v1/productsAdd a new productGet All ProductsGET /api/v1/productsList all productsGet One ProductGET /api/v1/products/{id}Get specific product detailsUpdate ProductPUT /api/v1/products/{id}Modify product informationDelete ProductDELETE /api/v1/products/{id}Remove a productAdd StockPOST /api/v1/products/{id}/increase-stockIncrease inventoryRemove StockPOST /api/v1/products/{id}/decrease-stockDecrease inventory (with validation)Low Stock AlertGET /api/v1/products/low-stock/listFind products running low
+Product Management
+
+Create Product: POST /api/v1/products - Add a new product to inventory
+Get All Products: GET /api/v1/products - Retrieve list of all products
+Get Single Product: GET /api/v1/products/{id} - Get details of a specific product
+Update Product: PUT /api/v1/products/{id} - Modify product information
+Delete Product: DELETE /api/v1/products/{id} - Remove a product from system
+
+Stock Management
+
+Increase Stock: POST /api/v1/products/{id}/increase-stock - Add inventory to a product
+Decrease Stock: POST /api/v1/products/{id}/decrease-stock - Remove inventory (with validation to prevent overselling)
+
+Monitoring
+
+Low Stock Alert: GET /api/v1/products/low-stock/list - Find products running low on inventory
+
+
 🚀 Quick Start Guide
 Prerequisites
 
@@ -67,6 +84,8 @@ The API will be running at http://localhost:3000
 Test It Works
 Visit http://localhost:3000/health in your browser - you should see a success message.
 🧪 Testing the API
+
+
 Option 1: Using VS Code (Recommended)
 
 Install the "REST Client" extension in VS Code
@@ -155,7 +174,7 @@ Separates business logic from HTTP handling
 Makes code easier to test and modify
 Follows enterprise development patterns
 
-📈 Skills Demonstrated
+** Skills Demonstrated
 This project showcases:
 
 Backend API Development - RESTful services with Express
@@ -166,7 +185,7 @@ Error Handling - Robust error responses and validation
 Code Organization - Clean, maintainable project structure
 Documentation - Clear README and code comments
 
-🔮 Future Enhancements
+** Future Enhancements
 Ideas for expanding this project:
 
 Add database integration (PostgreSQL/MongoDB)
@@ -179,8 +198,8 @@ Deploy to cloud platforms (AWS, Heroku)
 
 Key Highlights:
 
-🎯 Solves real business problems (inventory management)
-🧪 Comprehensive test coverage (95%+)
-🛡️ Production-ready security and error handling
-📚 Clear documentation and setup process
-⚡ Modern TypeScript/Node.js stack
+- Solves real business problems (inventory management)
+- Comprehensive test coverage (95%+)
+- Production-ready security and error handling
+- Clear documentation and setup process
+- Modern TypeScript/Node.js stack
